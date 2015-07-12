@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Igloo Australia Options</title>
+		<link async href="http://fonts.googleapis.com/css?family=Adamina" rel="stylesheet" type="text/css"/>
+		<link async href="http://fonts.googleapis.com/css?family=Roboto%20Slab" rel="stylesheet" type="text/css"/>
+		
+		<link rel="stylesheet" type="text/css" href="Scripts/style.css"/>
+		<link rel="stylesheet" type="text/css" href="jquery-ui.min.css"/>
+		
+	</head>
+	<body class="backOptions">
+		<div class="optionsBox">
+			<table border="0" style="border-spacing: 10px; border-collapse:separate; text-align:left;">
+				<tr>
+					<td> <img src="Icons/icon_full48.png" alt="Trash Full"/> </td>
+					<td> <h2 class="GoogleFont"> Igloo Australia Options </h2> </td>
+				</tr>
+				<tr><td><hr width="75%" style="position:absolute;" /></td></tr>
+			</table>
+	
+			<table width="500px">
+				<tr>
+					<td class="rightPadding"><p style="font-size: 17px; font-weight:bold;"> Replace "Iggy" with: </p></td>
+					<td><input type="text" id="IggyToVar" value="Igloo Australia" style="font-size: 14px;"/></td>
+				</tr>
+	
+				<tr>
+					<td><hr width="75%" style="position:absolute;" /></td>
+				</tr>
+				
+				<tr>
+					<td class="rightPadding"><p style="font-size: 17px; font-weight:bold;">Pick your poison: </p></td>
+					<td><input type="radio" id="CSS-Blur" value="Blur Iggy's Images"/><label style="font-size: 14px;vertical-align:middle;"> Blur Iggy's Images </label></td>
+				</tr>
+				
+				<tr>
+					<td class="rightPadding"> </td>
+					<td colspan="2"><input type="radio" id="Trash-Image"  value="Replace with picture of Trash"/><label style="font-size: 14px;vertical-align:top;"> Replace with picture of Trash </label></td>
+				</tr>
+				
+				<tr>
+					<td><hr width="75%" style="position:absolute;" /></td>
+				</tr>
+				
+				<tr>
+					<td class="rightPadding"><p style="font-size: 17px; font-weight:bold;" id="sval">Blur Strength: </p></td>
+					<td><div id="slider"></div></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2"><input type="button" id="submit" class="submitBtn" value="Apply Changes" /></td>
+				</tr>
+			</table>
+		</div>
+		
+	<script src="jquery.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="options.js"></script>	
+	</body>
+</html>
+

@@ -1,0 +1,184 @@
+.backimage {
+	/*background-image: url(http://www.noqta.it/dromoscopio/img/pattern_22.gif);*/
+	/*background-image: url(http://www.noqta.it/dromoscopio/img/pattern_31.gif);*/
+	background-image: url('css_icons/back_light.jpg');
+	/*background-image: url('css_icons/back_dark.jpg');*/
+	background-repeat: repeat;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-jqgobg');
+	src:url('fonts/icomoon.eot?#iefix-jqgobg') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-jqgobg') format('truetype'),
+		url('fonts/icomoon.woff?-jqgobg') format('woff'),
+		url('fonts/icomoon.svg?-jqgobg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cog:before {
+	content: "\e600";
+}
+.icon-reply:before {
+	content: "\e96a";
+}
+.icon-cog2:before {
+	content: "\e994";
+}
+.icon-switch:before {
+	content: "\e9b6";
+}
+.icon-cancel-circle:before {
+	content: "\ea0d";
+}
+.icon-cross:before {
+	content: "\ea0f";
+}
+.icon-check:before {
+	content: "\ea10";
+}
+.icon-check1:before {
+	content: "\ea11";
+}
+.icon-check3:before {
+	content: "\ea52";
+}
+
+#c {
+	text-align:center;
+}
+
+.center-font {
+	text-align: center;
+	font-family: 'mesmerizeSexpandedLtIt';
+	padding-right: -7px;
+	padding-left: 7px;
+	font-size: 20px;
+}
+
+.dotted{
+	border: 1px dotted black; 	
+}
+
+div#highlight:hover{
+	overflow:hidden;
+	background: -webkit-linear-gradient(top, rgba(70, 50, 0, 0.1), rgba(70, 50, 0, 0.1)), url('css_icons/back_light.jpg');
+	background-clip: content-box;
+	display:block;
+	font-family: 'mesmerizeSexpandedBkIt';
+	font-size: 22px;
+	padding-left: 5px;
+}
+div.highlight:hover{
+	overflow:hidden;
+	background: -webkit-linear-gradient(top, rgba(70, 50, 0, 0.1), rgba(70, 50, 0, 0.1)), url('css_icons/back_light.jpg');
+	background-clip: content-box;
+	display:block;
+	font-family: 'mesmerizeSexpandedBkIt';
+	font-size: 22px;
+	padding-left: 5px;
+}
+
+.iggypic{
+	display: block; 
+	position: relative; 
+	top: 15px; 
+	margin: 0px auto;
+	-webkit-transform: scale(0.75,0.75); 
+	-webkit-filter: opacity(0.60); 
+	margin-bottom: -20px; 
+	padding-bottom: -20px;
+	margin-top: -25px; padding-top: -25px;	
+}
+
+.iggypic:hover{
+	-webkit-filter: opacity(1);
+	
+}
+
+.centered{
+	text-align: center;
+	font-family: 'mesmerizeSexpandedLtIt';
+	padding-right: -7px;
+	padding-left: 7px;
+	font-size: 20px;
+	margin: auto;
+}
+
+.backOptions{
+	background-image: url('css_icons/back_light.jpg');
+	font-size: 12px;
+	margin-left: 155px;
+	margin-right: 0px;
+	overflow-x: hidden;	
+	font: normal 14px/normal "Roboto Slab", Helvetica, sans-serif;
+	
+}
+
+.GoogleFont {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 24px/1 "Adamina", Helvetica, sans-serif;
+  color: #222222;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5) ;
+}
+
+.rightPadding{
+	display: block;
+    float: left;
+    padding: 25px 0;
+    margin-right:50px;
+}
+
+.submitBtn {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  cursor: auto;
+  margin: auto;
+  padding: 10px 20px;
+  overflow: auto;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 17px/normal "Roboto Slab", Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #5c9ca5;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: 1px -1px 0 rgba(15,73,168,0.66) ;
+}
+.submitBtn:hover{
+	background: #A4635B;
+}
+
+.optionsBox{
+	background: #ffffff;
+	position: fixed;
+	padding: 0px 50px 50px 50px;
+	margin-top: 50px;
+}
