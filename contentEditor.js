@@ -16,7 +16,7 @@ updateArrays(regexses,keywords);	//Adds values to the regex array and keywords a
  */
 function initialCheck(){
 	
-	/*My dumbass could've used this
+	/*I forgot I could've used this
 	chrome.storage.sync.get('Enabled', function(data){
 		alert(data.Enabled);	
 	});*/

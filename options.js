@@ -2,10 +2,10 @@
  * @author Umar
  */
 
-var strength, text, choice;
+var strength, text, choice, running;
 
 
- $(function() {
+$(function() {
     $("#slider").slider({min: 0,
     	 max: 10, 
     	 step: 1, 
@@ -16,6 +16,9 @@ var strength, text, choice;
     $("#slider").slider("disable");
     var s = $("#slider").slider("value");
     
+    chrome.storage.sync.get('Enabled', function(data){
+			running = data;
+		});
   });
   
 window.onload = addListeners;
@@ -40,8 +43,9 @@ function addListeners(){
 	
 	
 	$("#submit").click(function(){
-		if(($("input").is(":checked")) && ($('#IggyToVar').val().length > 0)){
-				text = $('#IggyToVar').val();
+		
+		if(($("input").is(":checked")) && ($('#IggyToVar').val().length > 0) && (!(_.isEmpty(running)))){
+			text = $('#IggyToVar').val();
 			strength = $('#slider').slider("value");
 			choice = $('input:checked').val();
 			
@@ -58,6 +62,9 @@ function addListeners(){
 		}
 		else if($('#IggyToVar').val().length <= 0){
 			alert("Please enter something in the textfield.");
+		}
+		else if(_.isEmpty(running)){
+			alert("You seem to have the extension turned off.\n\nPlease turn on the extension to see the changes.");
 		}
 	});
 }

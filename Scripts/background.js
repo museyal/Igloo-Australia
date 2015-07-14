@@ -2,8 +2,6 @@
  * @author Umar
  */
 
-//alert("BACKGROUND JAVASCRIPT SUCCESSFULLY LOADED!");
-
 chrome.runtime.onMessage.addListener(function(response,sender,sendResponse){
 	
 	if(response == 'reloadtab'){
