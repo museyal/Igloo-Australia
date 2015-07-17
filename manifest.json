@@ -2,7 +2,7 @@
 	"author" : "M Umar Seyal",
 	"name" : "Igloo Australia",
 	"manifest_version" : 2,
-	"version" : "1.0.1.0",
+	"version" : "1.0.1.1",
 	"description" : "Gives user the option to either Blur pictures of Iggy Azalea or change them with a picture of Trash can.",
 	"background": {
     	"scripts": ["Scripts/background.js"]

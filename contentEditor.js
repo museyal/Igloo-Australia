@@ -4,6 +4,7 @@
 var running, strength, text, choice;
 var keywords = [];
 var regexses = [];
+var encryptedURLs = [];
 
 //firstRunCheck(); //Unfinished method that will be added in the upcoming updates.
 //updateCheck();	 //Unfinished method that will be added in the upcoming updates.
@@ -94,6 +95,8 @@ function updateArrays(reg,hot){
 	for(j in hot){
 		reg[j] = new RegExp("(?:"+hot[j]+")", "gi");
 	}
+	
+	reg[reg.length] = new RegExp("(?:encrypted)","gi");
 }
 
 /**
@@ -173,6 +176,7 @@ function getsImages(){
 		cls[cls.length] = $(this).attr("class");
 	});
 	
+	alt[alt.length] = "Image for the news result";
 	//console.log({Sources: src, Alternate_Text: alt, Title: tit, Long_Destination: lde, ID: idd, Class: cls});
 	
 	return {Sources: src, Alternate_Text: alt, Title: tit, Long_Destination: lde, ID: idd, Class: cls};
