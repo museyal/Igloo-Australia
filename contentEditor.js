@@ -4,7 +4,7 @@
 var running, strength, text, choice;
 var keywords = [];
 var regexses = [];
-var encryptedURLs = [];
+var TrashURLs = ["https://i.imgur.com/KI1UEHY.jpg", "https://i.imgur.com/tyLi3HG.jpg", "https://i.imgur.com/vw2AyEi.jpg", "https://i.imgur.com/nQRejxu.jpg", "https://i.imgur.com/JIdfyuF.jpg", "https://i.imgur.com/hwGjL5X.jpg", "https://i.imgur.com/FeCtyPy.jpg"];
 
 //firstRunCheck(); //Unfinished method that will be added in the upcoming updates.
 //updateCheck();	 //Unfinished method that will be added in the upcoming updates.
@@ -222,7 +222,14 @@ function updateImages(obj){
 					$(this).css({'-webkit-filter' : 'blur('+strength+'px)'});
 				}
 				else if(choice == "Replace with picture of Trash"){
-					$(this).css({'content':'url("https://i.imgur.com/auTIhxQ.gif")'});
+					var rand = _.random(0,6);
+					$(this).css({'content':'url('+TrashURLs[rand]+')'});
+
+					$(this).hover(function(){
+						$(this).css({'content': 'url(https://i.imgur.com/jj85Yhj.png)'});
+					}, function(){
+						$(this).css({'content':'url('+TrashURLs[rand]+')'});
+					});
 				//$(this).attr({"alt": "Trash", "title": "Trash", "src": "https://i.imgur.com/auTIhxQ.gif"});
 				}
 				}
